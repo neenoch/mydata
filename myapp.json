@@ -27,7 +27,7 @@
 			"title": "サンプルのタスク2"
 		},
 		{
-			"check": true,
+			"check": false,
 			"title": "サンプルのタスク3"
 		},
 		{
