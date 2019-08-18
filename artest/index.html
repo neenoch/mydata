@@ -10,13 +10,6 @@
 
 <!-- シーンの追加とデバックUIを非表示 -->
 <a-scene embedded arjs="debugUIEnabled:false;">
-
-  <a-assets>
-    <img id="texture" src="img/pattern1.png">
-  </a-assets>
-  
-  <a-entity id="links" position="0 -1 -4" data-thumb="#texture">
-</a-entity>
   
   <!-- ② hiroマーカーでのソース -->
   <a-marker preset="hiro">
@@ -40,5 +33,8 @@
   
   <a-entity camera></a-entity>
 </a-scene>
+  <a-scene>
+    <a-box position="5 0 -7" rotation="0 45 0" color="#4cc3d9"></a-box>
+  </a-scene>
 </body>
 </html>
