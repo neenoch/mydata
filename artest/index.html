@@ -12,14 +12,10 @@
 <a-scene embedded arjs="debugUIEnabled:false;">
 
   <a-assets>
-    <img id="cubes-thumb" crossorigin="anonymous" src="img/pattern1.png">
+    <img id="texture" src="img/pattern1.png">
   </a-assets>
   
-  <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-    <a-entity template="src: #link" data-thumb="#cubes-thumb">
-      <a-entity geometry="primitive: plane; height: 1; width: 1" material="shader: flat; src: #cubes-thumb" scale="">
-      </a-entity>
-  </a-entity>
+  <a-box src="#texture" position="0 0.5 -1.5" rotation="0 45 0" width="1" height="1" depth="0.1"></a-box>
     
   
   <!-- ② hiroマーカーでのソース -->
