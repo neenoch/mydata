@@ -11,7 +11,10 @@
 
 <!-- シーンの追加とデバックUIを非表示 -->
 <a-scene embedded arjs="debugUIEnabled:false;">
-  
+  <a-assets>
+    <img id="my-image" src="./img/.png">
+  </a-assets>
+
   <!-- ② hiroマーカーでのソース -->
   <a-marker preset="hiro">
     <a-sphere width="4" height="4" position="0 .5 0" color="#111">
@@ -39,4 +42,3 @@
   </a-scene>
 </body>
 </html>
-
