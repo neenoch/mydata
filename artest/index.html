@@ -12,15 +12,6 @@
 <a-scene embedded arjs="debugUIEnabled:false;">
   
 
-
-  <!-- ② hiroマーカーでのソース -->
-  <a-marker preset="hiro">
-    <a-sphere width="4" height="4" position="0 .5 0" color="#111">
-      <a-animation attribute="position" to="0 1 0" direction="alternate" dur="2000" repeat="indefinite">
-      </a-animation>
-    </a-sphere>
-  </a-marker>
-
   <!-- ③ 作成したマーカーでのソース -->
   <a-marker preset="custom" type='pattern' url='./marker/pattern-marker.patt'>
       <a-box scale="1 1 .01" position="0 0 0" wireframe="false" color="#fff" rotation="90 0 0"></a-box>
@@ -38,6 +29,7 @@
 <a-entity camera></a-entity>
 
 </a-scene>
+
 
 </body>
 </html>
