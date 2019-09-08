@@ -5,12 +5,17 @@
     <title>A-Frame360写真テスト</title>
     <meta name="description" content="A-Frame Panorama Sample">
     <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
-  </head>
+    <script src="https://rawgit.com/chenzlabs/a-frame-ar/master/dist/aframe-ar.js"></script>
+    <script src="https://rawgit.com/google-ar/three.ar.js/master/dist/three.ar.js"></script>
+</head>
   <body>
-    <a-scene>
+    <a-scene ar>
       <a-assets>
 		<img src="././artest/img/10488298266343.jpg" id="sky">
 	</a-assets>
+      <a-entity camera>
+       <a-text position="0 0 -1"></a-text>
+      <a-entity>
       <a-sky src="#sky" rotation="0 170 0"></a-sky>
     </a-scene>
   </body>
